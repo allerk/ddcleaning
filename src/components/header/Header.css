@@ -1,0 +1,30 @@
+.header-font{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+header{
+    box-shadow: 0px 1px 15px rgba(100, 100, 100, 0.29);
+    -moz-box-shadow: 0px 1px 15px rgba(100, 100, 100, 0.29);
+    -webkit-box-shadow: 0px 1px 15px rgba(100, 100, 100, 0.29);
+}
+
+/*.logo {*/
+/*    height: 100%; !* Scale the logo to fit the height of the header *!*/
+/*    object-fit: contain; !* Scale the image to fit within its container while preserving its aspect ratio *!*/
+/*    object-position: center; !* Center the logo within the header *!*/
+/*}*/
+
+/*header {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    width: 100%;*/
+/*    z-index: 1000; !* set a high z-index to ensure the header is always on top *!*/
+/*}*/
+
+/*header.fixed {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    width: 100%;*/
+/*    z-index: 1000;*/
+/*}*/
