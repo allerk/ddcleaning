@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;700;900&display=swap');
+
+.h1-services{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 40px;
+    /*color: #1BA904;*/
+    padding-top: 100px;
+    text-align: left;
+}
+
+.h1-services::first-letter{
+    color: #1BA904;
+}
+
+.align-services{
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 50px;
+}
+
+.h4-services{
+    /* H3 */
+
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 20px;
+    /* identical to box height, or 111% */
+
+
+    color: #000000;
+}
+
+.br-1{
+    border-radius: 0px 0px 20px 20px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.br-2{
+    border-radius: 20px 20px 0px 0px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.service-block{
+
+}
+
+.p-services{
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /*color: #1BA904;*/
+    letter-spacing: 1px;
+    margin-top: 15px;
+
+}
+
+.btn-more{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 167% */
+
+    letter-spacing: 0.02em;
+    text-transform: lowercase;
+
+    color: #EAEFF5;
+
+    /*position: absolute;*/
+    width: 65px;
+    height: 20px;
+    /*left: calc(50% - 65px/2);*/
+    /*top: calc(50% - 20px/2);*/
+
+    background: #1BA904;
+    border-radius: 10px;
+
+    /* Главная кнопка */
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 57px;
+    gap: 10px;
+    border: none;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}

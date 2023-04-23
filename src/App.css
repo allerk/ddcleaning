@@ -3,9 +3,24 @@
   margin: 0 auto;
   /*padding: 2rem;*/
   text-align: center;
-  /*background-color: #e9ecef;*/
+  /*background-color: #8bb0d3;*/
   background-color: #ffffff;
+  /*background-image: url("https://d17x34b9fcvxk7.cloudfront.net/static/marketing/images/hero-backgrounds/making-bed.webp");*/
   min-height: 100vh;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("./fonts/RobotoSlab-VariableFont_wght.ttf") format('truetype');
+}
+
+.headerText {
+  font-family: 'Roboto Slab', sans-serif;
+  /*text-shadow: 2px 2px 4px #000000;*/
 }
 
 a {

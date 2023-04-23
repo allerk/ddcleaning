@@ -1,11 +1,11 @@
 import {Route, Routes} from "react-router-dom";
-import How from "./components/how/How";
+import How from "./components/how/Home";
 import Footer from "./components/footer/Footer";
 import './App.css'
 import Header from "./components/header/Header";
 import Contact from "./components/contacts/Contact";
-import Service from "./components/services/Service";
-import Home from "./components/home/Home";
+import Service from "./components/how/services/Service";
+import Home from "./components/home-no/Home";
 import {Trans, useTranslation} from "react-i18next";
 
 export const App = () => {
@@ -23,8 +23,7 @@ export const App = () => {
                 {/*    {t('learn')}*/}
                 {/*</p>*/}
                 <Routes>
-                    <Route index element={<Home />}/>
-                    <Route path="/howitworks" element={<How />}/>
+                    <Route index element={<How />}/>
                     <Route path="/contacts" element={<Contact/>}></Route>
                     <Route path="/commercial" element={<Service serviceName="Commercial cleaning"/>}></Route>
                 </Routes>

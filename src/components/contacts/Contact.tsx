@@ -149,7 +149,7 @@ const Contact = () => {
                                                     type="text"
                                                     // id="subject"
                                                     name="user_topic"
-                                                    className="form-control"
+                                                    className="inputTest"
                                                     onChange={(e) => handleChange(e.target)}
                                                 />
                                             </div>

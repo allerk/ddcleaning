@@ -2,6 +2,8 @@ import './Header.css';
 import {useEffect, useState} from "react";
 import {useTranslation} from "react-i18next";
 import {Link} from "react-router-dom";
+import logo from "./logo.svg";
+import lang from "./language-svgrepo-com.svg";
 
 const lngs = {
     en: { nativeName: 'English' },
@@ -47,58 +49,83 @@ const Header = () => {
     }
 
     return(
-        <div className="container-fluid sticky-top bg-white" style={{padding: "0px"}}>
-            <header className="d-flex justify-content-center py-3">
-                <div className="container container-fluid">
-                    <nav className="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white box-shadow m3">
-                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"></span>
-                        </button>
-                        <div className="navbar-collapse collapse d-sm-inline-flex justify-content-center" id="navbarNav">
-                            <div className="navbar-collapse collapse d-sm-inline-flex justify-content-center" id="navbarNav">
-                                <ul className="navbar-nav">
-                                    <li className="nav-item"><Link to="/" className="nav-link active" aria-current="page">Home page</Link></li>
-                                    <li className="nav-item"><Link to="/howitworks" className="nav-link">How it works</Link></li>
-                                    {/*<li className="nav-item"><a href="#" className="nav-link">Services</a></li>*/}
-                                    <li className="nav-item dropdown">
-                                        <Link className="nav-link dropdown-toggle" to="#" id="navbarDarkDropdownMenuLink"
-                                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Services
-                                        </Link>
-                                        <ul className="dropdown-menu dropdown-menu"
-                                            aria-labelledby="navbarDarkDropdownMenuLink">
-                                            <li><Link className="dropdown-item" to="/commercial">Commercial cleaning</Link></li>
-                                            <li><Link className="dropdown-item" to="/regular">Regular cleaning</Link></li>
-                                        </ul>
-                                    </li>
-                                    <li className="nav-item"><Link to="/contacts" className="nav-link">Contacts</Link></li>
-                                    <li className="nav-item">
-                                        <select
-                                            value={i18n.resolvedLanguage}
-                                            className="form-select"
-                                            aria-label="Default select example"
-                                            onChange={(e) => handleLanguageChange(e.target)}
-                                        >
-                                            {/*<option defaultValue="en" disabled={i18n.resolvedLanguage === "en"}>en</option>*/}
-                                            <option defaultValue="en">en</option>
-                                            <option value="ee">ee</option>
-                                            <option value="ru">ru</option>
-                                        </select>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        {/*<ul className="nav nav-pills">*/}
-                        {/*    <li className="nav-item"><a href="#" className="nav-link active" aria-current="page">Home page</a></li>*/}
-                        {/*    <li className="nav-item"><a href="#" className="nav-link">How it works</a></li>*/}
-                        {/*    <li className="nav-item"><a href="#" className="nav-link">Services</a></li>*/}
-                        {/*    <li className="nav-item"><a href="#" className="nav-link">Contacts</a></li>*/}
+        // <div className="container-fluid sticky-top bg-white w-100" style={{padding: "0px"}}>
+        //     <header className="sticky-top justify-content-center py-3 w-100 header pt-0">
+        //         <div className="container container-fluid">
+        <header className="sticky-top">
+            <nav className="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white box-shadow m3">
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                    <div className="navbar-collapse collapse d-sm-inline-flex justify-content-between header-font" id="navbarNav">
+                        {/*<ul className="navbar-nav">*/}
+                        {/*    <li>*/}
+                                <img className="logoBig disabled" src={logo} alt="logo" style={{paddingLeft: "24px"}}/>
+                            {/*</li>*/}
                         {/*</ul>*/}
-                    </nav>
-                </div>
-            </header>
-        </div>
+                        <ul className="navbar-nav">
+                            <li className="nav-item"><Link to="/" className="nav-link active" aria-current="page">Home page</Link></li>
+                            <li className="nav-item dropdown">
+                                <Link className="nav-link dropdown-toggle" to="#" id="navbarDarkDropdownMenuLink"
+                                      role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </Link>
+                                <ul className="dropdown-menu dropdown-menu"
+                                    aria-labelledby="navbarDarkDropdownMenuLink">
+                                    <li><Link className="dropdown-item" to="/commercial">Commercial cleaning</Link></li>
+                                    <li><Link className="dropdown-item" to="/regular">Regular cleaning</Link></li>
+                                </ul>
+                            </li>
+                            <li className="nav-item"><Link to="/contacts" className="nav-link">Contacts</Link></li>
+                        </ul>
+                        {/*<ul className="navbar-nav">*/}
+                            {/*<li className="nav-item">*/}
+                        <div>
+                            en
+                            <img src={lang} alt="lang" className="logo disabled" style={{paddingLeft: "0px"}}/>
+                        </div>
+                            {/*</li>*/}
+                            {/*<li className="nav-item">*/}
+                            {/*    <select*/}
+                            {/*        value={i18n.resolvedLanguage}*/}
+                            {/*        className="form-select"*/}
+                            {/*        aria-label="Default select example"*/}
+                            {/*        onChange={(e) => handleLanguageChange(e.target)}*/}
+                            {/*    >*/}
+                            {/*        <option defaultValue="en">en</option>*/}
+                            {/*        <option value="ee">ee</option>*/}
+                            {/*        <option value="ru">ru</option>*/}
+                            {/*    </select>*/}
+                            {/*</li>*/}
+                        {/*</ul>*/}
+                    </div>
+            </nav>
+        </header>
+            //     </div>
+            // </header>
+        // </div>
+        // <header>
+        //     <img className="logo" src={logo} alt="logo"/>
+        //     <nav>
+        //         <ul className="nav__links">
+        //             <li><a href="#">Home</a></li>
+        //             <li><a href="#">Services</a></li>
+        //             <li><a href="#">Contacts</a></li>
+        //         </ul>
+        //     </nav>
+        //     {/*<select*/}
+        //     {/*    value={i18n.resolvedLanguage}*/}
+        //     {/*    className="form-select cta"*/}
+        //     {/*    aria-label="Default select example"*/}
+        //     {/*    onChange={(e) => handleLanguageChange(e.target)}*/}
+        //     {/*>*/}
+        //     {/*    <option defaultValue="en">en</option>*/}
+        //     {/*    <option value="ee">ee</option>*/}
+        //     {/*    <option value="ru">ru</option>*/}
+        //     {/*</select>*/}
+        //     <a href="#">Language</a>
+        // </header>
     )
 }
 
