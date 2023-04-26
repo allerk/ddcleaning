@@ -16,9 +16,10 @@
     font-style: normal;
     font-weight: 900;
     font-size: 50px;
+    /*font-size: 3vw;*/
     line-height: 40px;
     /*color: #1BA904;*/
-    margin-top: 15px;
+    padding-top: 15px;
 }
 
 .h1-about::first-letter{
@@ -32,7 +33,7 @@
     font-size: 30px;
     line-height: 20px;
     /*color: #1BA904;*/
-    margin-top: 140px;
+    padding-top: 140px;
 }
 
 .p-about{
@@ -43,7 +44,7 @@
     line-height: 20px;
     /*color: #1BA904;*/
     letter-spacing: 1px;
-    margin-top: 50px;
+    padding-top: 50px;
 }
 
 .items{

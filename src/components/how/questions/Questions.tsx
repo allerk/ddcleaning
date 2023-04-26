@@ -1,11 +1,11 @@
-import picture from "../assets/high-angle-basket-with-cleaning-products_edited.jpg"
+import picture from "../assets/questions.jpg"
 import "./Questions.css"
 
 const Questions = () => {
     return(
         <>
             <div className="row" style={{paddingTop: "150px", paddingBottom: "150px"}}>
-                <div className="col-md-6" style={{paddingRight: "0"}}>
+                <div className="col-md-6 blank-right">
                     <div className="text-white bg-white parent br-text">
                         <div className="row">
                             <div className="col-md-1"></div>
@@ -23,9 +23,9 @@ const Questions = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-6 d-flex justify-content-end" style={{paddingLeft: "0"}}>
+                <div className="col-md-6 d-flex justify-content-end blank-left">
                     {/*<img style={{objectFit: "cover", width: "100%", height: "319px"}} src={pilt} alt={pilt}/>*/}
-                    <img src={picture} className="d-inline-block img-fluid mb-4 br-image"/>
+                    <img src={picture} alt="picture" className="d-inline-block img-fluid mb-4 br-image"/>
                 </div>
             </div>
         </>

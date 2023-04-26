@@ -3,31 +3,49 @@ import Selector from "../selector/Selector";
 import Category from "../categories/Category";
 import './Home.css';
 import Welcome from "./Welcome/Welcome";
-import picture from "./assets/main.jpg";
+import picture_welcome from "./assets/main_edited.jpg";
+import picture_about from "./assets/about_woman_edited.jpg";
+import picture_services from "./assets/services.jpg";
 import Advantages from "./advantages/Advantages";
 import Service from "./services/Service";
 import Questions from "./questions/Questions";
 
 const Home = () => {
     return(
-        <div className="container-fluid">
-            {/*<div className="row">*/}
-            <section id="welcome" className="m-0 bg-image-welcome d-flex align-items-center">
-                {/*<picture>*/}
-                {/*    <img src={picture} alt="welcome" className="background"/>*/}
-                {/*</picture>*/}
-                <div className="container">
-                    <Welcome></Welcome>
+        <div className="container-fluid p-0">
+            {/*<section id="welcome" className="m-0">*/}
+            {/*    <div className="container-fluid p-0">*/}
+            {/*        <div className="image-container">*/}
+            {/*            <img src={picture_welcome} alt="welcome" className="image-background"/>*/}
+            {/*            <div className="text-container">*/}
+            {/*                <Welcome></Welcome>*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</section>*/}
+            <section id="welcome" className="m-0 bg-image-welcome">
+                <div className="container-fluid">
+                    <div className="container welcome-text">
+                        <Welcome></Welcome>
+                    </div>
                 </div>
             </section>
+            {/*<section id="about" className="m-0">*/}
+            {/*    <div className="container-fluid p-0">*/}
+            {/*        <div className="image-container">*/}
+            {/*            <img src={picture_about} alt="about" className="image-background"/>*/}
+            {/*            <div className="text-container">*/}
+            {/*                <div className="container">*/}
+            {/*                    <About></About>*/}
+            {/*                </div>*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</section>*/}
             <section id="about" className="m-0 bg-image-about">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-5">
-                            <About></About>
-                        </div>
-                        <div className="col-md-7">
-                        </div>
+                <div className="container-fluid p-0">
+                    <div className="container expand">
+                        <About></About>
                     </div>
                 </div>
             </section>
@@ -36,10 +54,24 @@ const Home = () => {
                     <Advantages></Advantages>
                 </div>
             </section>
+            {/*<section id="services" className="m-0">*/}
+            {/*    <div className="container-fluid p-0">*/}
+            {/*        <div className="image-container">*/}
+            {/*            <img src={picture_services} alt="services" className="image-background"/>*/}
+            {/*            <div className="text-container">*/}
+            {/*                <div className="container">*/}
+            {/*                    <Service></Service>*/}
+            {/*                </div>*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</section>            */}
             <section id="services" className="m-0 bg-image-services">
-                <div className="container">
-                    <Service></Service>
-                </div>
+                {/*<div className="container-fluid p-0">*/}
+                    <div className="container expand2">
+                        <Service></Service>
+                    </div>
+                {/*</div>*/}
             </section>
             <section id="questions" className="m-0 bg-advantages">
                 <div className="container">

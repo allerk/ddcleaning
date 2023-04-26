@@ -16,9 +16,11 @@
 }
 
 .align-services{
+    display: flex;
+    flex-wrap: wrap;
     text-align: left;
     font-family: "Montserrat", sans-serif;
-    margin-top: 50px;
+    padding-top: 50px;
 }
 
 .h4-services{
@@ -56,7 +58,7 @@
     line-height: 20px;
     /*color: #1BA904;*/
     letter-spacing: 1px;
-    margin-top: 15px;
+    padding-top: 15px;
 
 }
 
@@ -100,4 +102,25 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+}
+
+@media screen and (max-width: 480px) {
+    .br-1{
+        border-radius: 20px 20px 20px 20px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+    .br-2{
+        border-radius: 20px 20px 20px 20px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+
+    .col-md-4 {
+        display: flex;
+        flex-direction: column;
+        /*align-items: center;*/
+    }
+
+    .col-md-4 img {
+        order: 2;
+    }
 }

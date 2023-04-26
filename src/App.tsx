@@ -15,7 +15,7 @@ export const App = () => {
     return (
         <>
             <Header/>
-            <main role="main" className="pb-3">
+            <main role="main">
                 {/*<p>*/}
                 {/*    <Trans i18nKey="hello">*/}
                 {/*        <code>Hello mate! How are you?</code>*/}
@@ -25,7 +25,7 @@ export const App = () => {
                 <Routes>
                     <Route index element={<How />}/>
                     <Route path="/contacts" element={<Contact/>}></Route>
-                    <Route path="/commercial" element={<Service serviceName="Commercial cleaning"/>}></Route>
+                    {/*<Route path="/commercial" element={<Service serviceName="Commercial cleaning"/>}></Route>*/}
                 </Routes>
             </main>
             <Footer/>

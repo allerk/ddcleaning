@@ -16,7 +16,7 @@
 
 .flex{
     /*padding-top: 450px;*/
-    padding-bottom: 100px;
+    /*padding-bottom: 100px;*/
 }
 
 .h1-welcome{
@@ -38,6 +38,7 @@
     color: #000000BF;
     margin-bottom: 41px;
 }
+
 
 .services{
     /*display: flex;*/
