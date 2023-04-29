@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;700;900&display=swap');
+
+.br-text{
+    border-radius: 20px 0px 0px 20px;
+    color: black;
+}
+.br-image{
+    border-radius: 0px 20px 20px 0px;
+    height: 100%;
+}
+
+.parent {
+    display: flex; /* enables flexbox layout */
+    flex-direction: column;
+    align-items: center; /* centers elements along the cross axis (vertically) */
+    justify-content: center; /* centers elements along the main axis (horizontally) */
+    height: 100%; /* sets the height of the parent container */
+}
+
+.blank-right{
+    padding-right: 0;
+}
+.blank-left{
+    padding-left: 0;
+}
+
+.h1-questions{
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 40px;
+    /*color: #1BA904;*/
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.p-questions{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 143% */
+
+    text-align: left;
+    letter-spacing: 0.005em;
+    margin-bottom: 38px;
+
+    /* Background color text */
+
+    color: #000000;
+}
+
+.btn-contact{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 50px;
+
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    color: #EAEFF5;
+
+    width: 180px;
+    height: 40px;
+
+    background: #1BA904;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 57px;
+    gap: 10px;
+    border: none;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+@media screen and (max-width: 480px) {
+    .br-text{
+        border-radius: 20px 20px 0px 0px;
+        color: black;
+    }
+    .br-image{
+        border-radius: 0px 0px 20px 20px;
+        height: 100%;
+    }
+
+    .blank-right{
+        padding-right: 12px;
+    }
+    .blank-left{
+        padding-left: 12px;
+    }
+}
+
+@media screen and (min-width: 3840px) {
+    .h1-questions{
+        color: black;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 100px;
+        line-height: 80px;
+        /*color: #1BA904;*/
+        margin-top: 50px;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .p-questions{
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 40px;
+        /* or 143% */
+
+        text-align: left;
+        letter-spacing: 0.005em;
+        margin-bottom: 38px;
+
+        /* Background color text */
+
+        color: #000000;
+    }
+
+    .btn-contact{
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 40px;
+        margin-bottom: 50px;
+
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+
+        color: #EAEFF5;
+
+        width: 360px;
+        height: 80px;
+
+        background: #1BA904;
+        border-radius: 20px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 11px 57px;
+        gap: 10px;
+        border: none;
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+}
+
+/*@media screen and (min-width: 2048px) {*/
+/*    .h1-questions{*/
+/*        color: black;*/
+/*        font-family: "Roboto", sans-serif;*/
+/*        font-style: normal;*/
+/*        font-weight: 900;*/
+/*        font-size: 75px;*/
+/*        line-height: 60px;*/
+/*        !*color: #1BA904;*!*/
+/*        margin-top: 50px;*/
+/*        margin-bottom: 30px;*/
+/*        text-align: left;*/
+/*    }*/
+
+/*    .p-questions{*/
+/*        font-family: 'Montserrat', sans-serif;*/
+/*        font-style: normal;*/
+/*        font-weight: 400;*/
+/*        font-size: 25px;*/
+/*        line-height: 35px;*/
+/*        !* or 143% *!*/
+
+/*        text-align: left;*/
+/*        letter-spacing: 0.005em;*/
+/*        margin-bottom: 38px;*/
+
+/*        !* Background color text *!*/
+
+/*        color: #000000;*/
+/*    }*/
+
+/*    .btn-contact{*/
+/*        font-family: 'Roboto', sans-serif;*/
+/*        font-style: normal;*/
+/*        font-weight: 700;*/
+/*        font-size: 20px;*/
+/*        line-height: 30px;*/
+/*        margin-bottom: 50px;*/
+
+/*        letter-spacing: 0.02em;*/
+/*        text-transform: uppercase;*/
+
+/*        color: #EAEFF5;*/
+
+/*        width: 300px;*/
+/*        height: 60px;*/
+
+/*        background: #1BA904;*/
+/*        border-radius: 20px;*/
+
+/*        display: flex;*/
+/*        flex-direction: column;*/
+/*        justify-content: center;*/
+/*        align-items: center;*/
+/*        padding: 11px 57px;*/
+/*        gap: 10px;*/
+/*        border: none;*/
+
+/*        !* Inside auto layout *!*/
+
+/*        flex: none;*/
+/*        order: 0;*/
+/*        flex-grow: 0;*/
+/*    }*/
+/*}*/

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
 
+header{
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
 li, a{
     font-family: "Montserrat", sans-serif;
 
@@ -15,78 +19,40 @@ li, a{
     color: #000000;
 }
 
-header{
-    /*height: 50px;*/
-    /*display: flex;*/
-    /*justify-content: space-between;*/
-    /*align-items: center;*/
-    /*padding: 30px 10%;*/
-}
-
-.logo{
-    /*cursor: pointer;*/
-    /*width: 9%;*/
-    /*height: auto;*/
-}
-
-/*.nav__links{*/
-/*    list-style: none;*/
-/*}*/
-
-/*.nav__links li {*/
-/*    display: inline-block;*/
-/*    padding: 0px 20px;*/
-/*}*/
-
-/*.nav__links li a{*/
-/*    transition: all 0.3s ease 0s;*/
-/*}*/
-
-/*.nav__links li a:hover{*/
-/*    color: blue*/
-/*}*/
-
-/*--*/
-
-/*.header-font{*/
-/*    !*font-weight: bold;*!*/
-/*    font-size: 20px;*/
-/*}*/
-
 .disabled{
     pointer-events: none;
 }
-/*.selectorImage {*/
-/*    width: 50%;*/
-/*    height: auto;*/
-/*    !*fill: #11f511;*!*/
-/*    !*filter: brightness(80%) sepia(100%) hue-rotate(140deg);*!*/
-/*}*/
 
-/*.header{*/
-/*    box-shadow: 0px 1px 15px rgba(100, 100, 100, 0.29);*/
-/*    -moz-box-shadow: 0px 1px 15px rgba(100, 100, 100, 0.29);*/
-/*    -webkit-box-shadow: 0px 1px 15px rgba(100, 100, 100, 0.29);*/
-/*}*/
+@media screen and (min-width: 3840px) {
+    li, a{
+        font-family: "Montserrat", sans-serif;
 
-/*--*/
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 45px;
+        /* identical to box height, or 125% */
 
-/*.logo {*/
-/*    height: 100%; !* Scale the logo to fit the height of the header *!*/
-/*    object-fit: contain; !* Scale the image to fit within its container while preserving its aspect ratio *!*/
-/*    object-position: center; !* Center the logo within the header *!*/
-/*}*/
 
-/*header {*/
-/*    position: fixed;*/
-/*    top: 0;*/
-/*    width: 100%;*/
-/*    z-index: 1000; !* set a high z-index to ensure the header is always on top *!*/
-/*}*/
+        /* Background color text */
 
-/*header.fixed {*/
-/*    position: fixed;*/
-/*    top: 0;*/
-/*    width: 100%;*/
-/*    z-index: 1000;*/
-/*}*/
+        color: #000000;
+    }
+}
+
+@media screen and (min-width: 2048px) {
+    li, a{
+        font-family: "Montserrat", sans-serif;
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 45px;
+        /* identical to box height, or 125% */
+
+
+        /* Background color text */
+
+        color: #000000;
+    }
+}
