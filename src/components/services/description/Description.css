@@ -1,3 +1,9 @@
 .expand-description{
     padding-bottom: 115px;
 }
+
+@media screen and (max-width: 480px) {
+    .expand-description{
+        padding-bottom: 0;
+    }
+}

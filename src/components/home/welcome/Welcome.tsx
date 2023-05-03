@@ -12,7 +12,7 @@ const Welcome = () => {
                     <br/>
                     clients throughout Estonia
                 </p>
-                <button className="services">Services</button>
+                <a href="#services"><button className="services">Services</button></a>
             </div>
         </div>
     )

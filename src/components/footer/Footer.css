@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;500;600;700;900&display=swap');
+
 .sticky-footer{
     position: sticky;
     top: 100%;
@@ -9,4 +11,21 @@
 
 footer{
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footerText{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    padding-bottom: 10px;
+    /*line-height: 20px;*/
+}
+
+.footerTextNumber{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    /*line-height: 20px;*/
 }

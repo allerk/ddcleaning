@@ -13,12 +13,8 @@ const About = () => {
                         D&D Cleaning
                     </h3>
                     <p className="p-about">
-                        {/*All necessary cleaning services for private and corporate*/}
-                        {/*<br/>*/}
-                        {/*clients throughout Estonia*/}
                         На этом месте находится обычный текст среднего размера. Он может использоваться в обычных блоках на всём сайте. На этом месте находится обычный текст среднего размера. Он может использоваться в обычных блоках на всём сайте.     На этом месте находится обычный текст среднего размера. Он может использоваться в обычных блоках на всём сайте.
                     </p>
-                    {/*<button className="services">Services</button>*/}
                 </div>
             </div>
             <div className="col-md-7"></div>

@@ -28,7 +28,7 @@ const Home = () => {
                 </div>
             </section>
             <section id="services" className="m-0 bg-image-services">
-                <div className="container max-w-4k mx-auto expand2">
+                <div className="container-sm container-md container-lg max-w-4k mx-auto expand2">
                     <ServiceList></ServiceList>
                 </div>
             </section>

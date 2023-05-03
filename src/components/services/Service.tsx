@@ -1,6 +1,7 @@
 import "./Service.css";
 import Description from "./description/Description";
 import Calculator from "./business/Calculator";
+import Faq from "./faq/Faq";
 
 interface IServiceProps{
     serviceName: string
@@ -8,7 +9,7 @@ interface IServiceProps{
 
 const Service = (props: IServiceProps) => {
     return(
-        <div className="container-fluid p-0">
+        <div className="container-fluid p-0" id="service-page">
             <section id="service-description" className="m-0 bg-image-description">
                 <div className="container-fluid p-0">
                     <div className="container max-w-4k expand">
@@ -21,8 +22,10 @@ const Service = (props: IServiceProps) => {
                     <Calculator></Calculator>
                 </div>
             </section>
-            <section id="service-faq">
-
+            <section id="service-faq" className="m-0 bg-faq">
+                <div className="container max-w-4k">
+                    <Faq></Faq>
+                </div>
             </section>
         </div>
     )

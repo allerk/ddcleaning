@@ -24,7 +24,6 @@ const Questions = () => {
                     </div>
                 </div>
                 <div className="col-md-6 d-flex justify-content-end blank-left">
-                    {/*<img style={{objectFit: "cover", width: "100%", height: "319px"}} src={pilt} alt={pilt}/>*/}
                     <img src={picture} alt="picture" className="d-inline-block img-fluid mb-4 br-image" style={{width: "100%"}}/>
                 </div>
             </div>

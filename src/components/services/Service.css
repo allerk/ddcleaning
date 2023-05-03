@@ -10,6 +10,11 @@
     min-height: 530px;
 }
 
+.bg-faq{
+    background-color: #EAEFF5;
+    min-height: 690px;
+}
+
 @media screen and (max-width: 480px) {
     .bg-image-description {
         background-image: none;
