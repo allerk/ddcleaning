@@ -23,3 +23,9 @@
     /*    background-image: none;*/
     /*}*/
 }
+
+@media screen and (min-width: 480px) and (max-width: 950px) {
+    .bg-image-description {
+        background-image: none;
+    }
+}
