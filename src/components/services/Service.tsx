@@ -2,12 +2,18 @@ import "./Service.css";
 import Description from "./description/Description";
 import Calculator from "./business/Calculator";
 import Faq from "./faq/Faq";
+import {useEffect} from "react";
 
 interface IServiceProps{
     serviceName: string
 }
 
 const Service = (props: IServiceProps) => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     return(
         <div className="container-fluid p-0" id="service-page">
             <section id="service-description" className="m-0 bg-image-description">

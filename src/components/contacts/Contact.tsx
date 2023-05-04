@@ -1,10 +1,11 @@
-import inst from '../../assets/topics/Instagram Black Line.svg';
 import './Contact.css';
-import {FormEvent, useRef, useState} from "react";
-import emailjs from '@emailjs/browser';
-import Faq from "../services/faq/Faq";
+import {useEffect} from "react";
 
 const Contact = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
     // const form = useRef<string | HTMLFormElement>("");
     //

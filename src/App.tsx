@@ -10,7 +10,6 @@ import Service from "./components/services/Service";
 export const App = () => {
 
     const {t} = useTranslation();
-
     return (
         <>
             <Header/>

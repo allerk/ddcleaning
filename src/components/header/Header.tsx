@@ -14,28 +14,27 @@ const lngs = {
 const Header = () => {
 
     const {t, i18n } = useTranslation();
-
-    const [isScrolled, setIsScrolled] = useState(false);
-
-    // Add a scroll event listener to update the isScrolled state variable
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
-    // Update the isScrolled state variable based on the user's scroll position
-    const handleScroll = () => {
-        const scrollTop = window.pageYOffset;
-
-        if (scrollTop > 0 && !isScrolled) {
-            setIsScrolled(true);
-        } else if (scrollTop === 0 && isScrolled) {
-            setIsScrolled(false);
-        }
-    };
+    // const [isScrolled, setIsScrolled] = useState(false);
+    //
+    // // Add a scroll event listener to update the isScrolled state variable
+    // useEffect(() => {
+    //     window.addEventListener('scroll', handleScroll);
+    //
+    //     return () => {
+    //         window.removeEventListener('scroll', handleScroll);
+    //     };
+    // }, []);
+    //
+    // // Update the isScrolled state variable based on the user's scroll position
+    // const handleScroll = () => {
+    //     const scrollTop = window.pageYOffset;
+    //
+    //     if (scrollTop > 0 && !isScrolled) {
+    //         setIsScrolled(true);
+    //     } else if (scrollTop === 0 && isScrolled) {
+    //         setIsScrolled(false);
+    //     }
+    // };
 
     const handleLanguageChange = (event:
                                       EventTarget & HTMLInputElement |

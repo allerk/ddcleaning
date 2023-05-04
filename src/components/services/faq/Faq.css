@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;500;600;700;900&display=swap');
+
+.accordion {
+    background-color: #EAEFF5;
+    /*background-color: #EAEFF5;*/
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-radius: 1.2rem;
+}
+
+.activeFaq, .accordion:hover {
+    background-color: #e1e7f3;
+}
+
+.accordion:after {
+    content: '\02795';
+    color: #1BA904;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.activeFaq:after {
+    content: "\2796";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #EAEFF5;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.faqQuestion{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    /*line-height: 20px;*/
+}
+
+.faqDescription{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    /*line-height: 20px;*/
+}

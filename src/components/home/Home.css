@@ -80,6 +80,7 @@ section{
 @media (max-width: 1660px) {
     .bg-image-services {
         background-image: none;
+        background-color: white;
         /*background-size: cover;*/
         /*background-repeat: no-repeat;*/
     }
