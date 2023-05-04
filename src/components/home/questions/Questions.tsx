@@ -9,16 +9,18 @@ const Questions = () => {
                     <div className="text-white bg-white parent br-text">
                         <div className="row">
                             <div className="col-md-1"></div>
-                            <div className="col-md-11">
-                                <h1 className="h1-questions">
+                            <div className="col-md-11 center-mobile-questions">
+                                <h1 className="h1-questions text-center">
                                     Остались вопросы?
                                 </h1>
-                                <p className="p-questions">
+                                <p className="p-questions text-center">
                                     Свяжитесь с нами и получите незамедлительный и полный ответ
                                 </p>
-                                <button className="btn-contact">
-                                    contact
-                                </button>
+                                <div className="row justify-content-center">
+                                    <button className="btn-contact align-content-center">
+                                        contact
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>

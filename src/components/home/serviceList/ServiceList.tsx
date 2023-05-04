@@ -12,11 +12,11 @@ const ServiceList = () => {
             <PopUpService></PopUpService>
             <div className="row align-services d-flex justify-content-evenly">
                 <div className="col-md-4">
-                    <div className="row">
-                        <div className="col-md-8">
+                    <div className="row g-2">
+                        <div className="col-md-8 col-9">
                             <h4 className="h4-services">Regular cleaning</h4>
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-4 col-3">
                             {/*<button type="button" className="btn-more" data-bs-toggle="modal" data-bs-target="#staticBackdrop">more</button>*/}
                             <input value="more" type="button" className="btn-more" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
                             <PopUpService></PopUpService>
@@ -28,10 +28,10 @@ const ServiceList = () => {
                 <div className="col-md-4">
                     <img src={commercial} className="img-fluid mb-4 br-2" alt="commercial"/>
                     <div className="row">
-                        <div className="col-md-8">
+                        <div className="col-md-8 col-9">
                             <h4 className="h4-services">Commercial cleaning</h4>
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-4 col-3">
                             <button type="button" className="btn-more" data-bs-toggle="modal" data-bs-target="#staticBackdrop">more</button>
                             <PopUpService></PopUpService>
                         </div>
@@ -40,10 +40,10 @@ const ServiceList = () => {
                 </div>
                 <div className="col-md-4">
                     <div className="row">
-                        <div className="col-md-8">
+                        <div className="col-md-8 col-9">
                             <h4 className="h4-services">Tradespeople</h4>
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-4 col-3">
                             <button type="button" className="btn-more" data-bs-toggle="modal" data-bs-target="#staticBackdrop">more</button>
                             <PopUpService></PopUpService>
                         </div>

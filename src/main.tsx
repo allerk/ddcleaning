@@ -5,6 +5,8 @@ import 'popper.js';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
+import 'flatpickr/dist/flatpickr.css';
+
 
 import React from 'react'
 import ReactDOM from 'react-dom/client'

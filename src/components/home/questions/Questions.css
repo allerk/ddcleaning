@@ -104,6 +104,10 @@
     .blank-left{
         padding-left: 12px;
     }
+
+    .center-mobile-questions{
+        justify-content: center;
+    }
 }
 
 @media screen and (min-width: 3840px) {
