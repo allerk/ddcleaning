@@ -29,3 +29,12 @@
         background-image: none;
     }
 }
+
+@media screen and (max-width: 2560px) {
+    .bg-image-description {
+        background-image: url("assets/about_service.jpg");
+        background-size: 85%;
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+}

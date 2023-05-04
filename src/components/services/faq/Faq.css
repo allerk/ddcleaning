@@ -20,7 +20,8 @@
 }
 
 .accordion:after {
-    content: '\02795';
+    /*content: '\02795';*/
+    content: url("../assets/plus.png");
     color: #1BA904;
     font-weight: bold;
     float: right;
@@ -28,7 +29,8 @@
 }
 
 .activeFaq:after {
-    content: "\2796";
+    content: url("../assets/minus.png");
+    /*height: 100px;*/
 }
 
 .panel {

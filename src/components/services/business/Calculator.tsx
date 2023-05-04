@@ -1,7 +1,8 @@
 import "./Calculator.css";
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.css';
-import {useEffect, useRef} from "react";
+import React, {useEffect, useRef, useState} from "react";
+import Datetime from 'react-datetime';
 
 const Calculator = () => {
     // const datetimeRef = useRef(null);
@@ -14,6 +15,12 @@ const Calculator = () => {
     //         });
     //     }
     // }, []);
+
+    const [datetime, setDatetime] = useState("");
+
+    const handleDatetimeChange = () => {
+        setDatetime("dsa");
+    };
 
     return(
         <>
@@ -69,7 +76,9 @@ const Calculator = () => {
                 </div>
                 <div className="col-md-6 col-lg-3 inputNames">
                     <label className="mainCalculator">Select date</label>
-                    <input type="datetime-local" min={new Date().toISOString().slice(0,16)} name="squareMeters" className="input-calculator" style={{width: "100%"}}/>
+                    <div style={{width: "100%"}}>
+                        <input type="datetime-local" min={new Date().toISOString().slice(0,16)} name="squareMeters" className="input-calculator" style={{width: "100%"}}/>
+                    </div>
                 </div>
                 <div className="col-md-6 col-lg-3 inputNames">
                     <label className="mainCalculator">Enter your phone number</label>
