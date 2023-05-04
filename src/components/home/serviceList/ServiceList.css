@@ -71,10 +71,12 @@
     letter-spacing: 0.02em;
     text-transform: lowercase;
 
+    /*align-items: end;*/
+
     color: #EAEFF5;
 
     /*position: absolute;*/
-    width: 65px;
+    width: 100%;
     height: 20px;
     /*left: calc(50% - 65px/2);*/
     /*top: calc(50% - 20px/2);*/
@@ -91,7 +93,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 11px 57px;
+    /*padding: 11px 57px;*/
     gap: 10px;
     border: none;
 
@@ -208,87 +210,6 @@
     }
 }
 
-/*@media screen and (min-width: 2048px) {*/
-/*    .h1-services{*/
-/*        font-family: "Roboto", sans-serif;*/
-/*        font-style: normal;*/
-/*        font-weight: 900;*/
-/*        font-size: 65px;*/
-/*        line-height: 60px;*/
-/*        !*color: #1BA904;*!*/
-/*        padding-top: 100px;*/
-/*        text-align: left;*/
-/*    }*/
+@media screen and (min-width: 480px) and (max-width: 950px) {
 
-/*    .h1-services::first-letter{*/
-/*        color: #1BA904;*/
-/*    }*/
-
-/*    .h4-services{*/
-/*        !* H3 *!*/
-
-/*        font-family: "Roboto", sans-serif;*/
-/*        font-style: normal;*/
-/*        font-weight: 700;*/
-/*        font-size: 35px;*/
-/*        line-height: 30px;*/
-/*        !* identical to box height, or 111% *!*/
-
-
-/*        color: #000000;*/
-/*    }*/
-
-/*    .p-services{*/
-/*        font-family: "Montserrat", sans-serif;*/
-/*        font-style: normal;*/
-/*        font-weight: 400;*/
-/*        font-size: 25px;*/
-/*        line-height: 30px;*/
-/*        !*color: #1BA904;*!*/
-/*        letter-spacing: 1px;*/
-/*        padding-top: 15px;*/
-
-/*    }*/
-
-/*    .btn-more{*/
-/*        font-family: 'Roboto', sans-serif;*/
-/*        font-style: normal;*/
-/*        font-weight: 700;*/
-/*        font-size: 20px;*/
-/*        line-height: 30px;*/
-/*        !* identical to box height, or 167% *!*/
-
-/*        letter-spacing: 0.02em;*/
-/*        text-transform: lowercase;*/
-
-/*        color: #EAEFF5;*/
-
-/*        !*position: absolute;*!*/
-/*        width: 100px;*/
-/*        height: 30px;*/
-/*        !*left: calc(50% - 65px/2);*!*/
-/*        !*top: calc(50% - 20px/2);*!*/
-
-/*        background: #1BA904;*/
-/*        border-radius: 20px;*/
-
-/*        !* Главная кнопка *!*/
-
-
-/*        !* Auto layout *!*/
-
-/*        display: flex;*/
-/*        flex-direction: column;*/
-/*        justify-content: center;*/
-/*        align-items: center;*/
-/*        padding: 11px 57px;*/
-/*        gap: 10px;*/
-/*        border: none;*/
-
-/*        !* Inside auto layout *!*/
-
-/*        flex: none;*/
-/*        order: 0;*/
-/*        flex-grow: 0;*/
-/*    }*/
-/*}*/
+}

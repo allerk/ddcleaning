@@ -17,7 +17,8 @@ const ServiceList = () => {
                             <h4 className="h4-services">Regular cleaning</h4>
                         </div>
                         <div className="col-md-4">
-                            <button type="button" className="btn-more" data-bs-toggle="modal" data-bs-target="#staticBackdrop">more</button>
+                            {/*<button type="button" className="btn-more" data-bs-toggle="modal" data-bs-target="#staticBackdrop">more</button>*/}
+                            <input value="more" type="button" className="btn-more" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
                             <PopUpService></PopUpService>
                         </div>
                     </div>

@@ -138,3 +138,9 @@
         top: calc(50% - 40px/2 + 205px);
     }
 }
+
+@media screen and (min-width: 480px) and (max-width: 950px) {
+    .modal-xl{
+        max-width: 95%;
+    }
+}
