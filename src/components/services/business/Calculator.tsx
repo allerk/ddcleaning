@@ -1,21 +1,15 @@
 import "./Calculator.css";
-import flatpickr from 'flatpickr';
-import 'flatpickr/dist/flatpickr.css';
+import Flatpickr from "react-flatpickr";
+import 'flatpickr/dist/flatpickr.min.css';
 import React, {useEffect, useRef, useState} from "react";
 import Datetime from 'react-datetime';
 
 const Calculator = () => {
-    // const datetimeRef = useRef(null);
-    //
-    // useEffect(() => {
-    //     if (datetimeRef.current) {
-    //         flatpickr(datetimeRef.current, {
-    //             enableTime: true,
-    //             dateFormat: 'Y-m-dTH:i:S',
-    //         });
-    //     }
-    // }, []);
+    const [dateTime, setDateTime] = useState(new Date());
 
+    const handleChange = (date: Date) => {
+        setDateTime(date);
+    };
     const [datetime, setDatetime] = useState("");
 
     const handleDatetimeChange = () => {
@@ -76,9 +70,19 @@ const Calculator = () => {
                 </div>
                 <div className="col-md-6 col-lg-3 inputNames">
                     <label className="mainCalculator">Select date</label>
-                    <div style={{width: "100%"}}>
-                        <input type="datetime-local" min={new Date().toISOString().slice(0,16)} name="squareMeters" className="input-calculator" style={{width: "100%"}}/>
-                    </div>
+                    {/*<div style={{width: "100%"}}>*/}
+                    {/*    <input type="datetime-local" min={new Date().toISOString().slice(0,16)} name="squareMeters" className="input-calculator" style={{width: "100%"}}/>*/}
+                    {/*</div>*/}
+                    <Flatpickr
+                        // className="input-calculator"
+                        value={dateTime}
+                        options={{
+                            enableTime: true,
+                            dateFormat: "Y-m-d H:i",
+                            minDate: new Date().toISOString().slice(0,16)
+                        }}
+                        onChange={() => handleChange}
+                    />
                 </div>
                 <div className="col-md-6 col-lg-3 inputNames">
                     <label className="mainCalculator">Enter your phone number</label>

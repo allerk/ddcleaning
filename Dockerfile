@@ -1,3 +1,8 @@
-FROM nginx:latest
+FROM steebchen/nginx-spa:stable
 
-COPY ./dist /usr/share/nginx/html
+# adapt the `dist/` folder to the output directory your build tool uses (such as `dist/`, `build/` or `www/`).
+COPY dist/ /app
+
+EXPOSE 80
+
+CMD ["nginx"]
