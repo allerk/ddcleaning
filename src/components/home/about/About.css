@@ -56,11 +56,11 @@
         font-family: "Roboto", sans-serif;
         font-style: normal;
         font-weight: 900;
-        font-size: 100px;
+        font-size: 4.7rem;
         /*font-size: 3vw;*/
-        line-height: 80px;
+        line-height: 2.5rem;
         /*color: #1BA904;*/
-        padding-top: 15px;
+        padding-top: 1rem;
     }
 
     .h1-about::first-letter{
@@ -71,21 +71,21 @@
         font-family: "Roboto", sans-serif;
         /*font-style: normal;*/
         font-weight: 700;
-        font-size: 60px;
-        line-height: 40px;
+        font-size: 2.8rem;
+        line-height: 1.8rem;
         /*color: #1BA904;*/
-        padding-top: 140px;
+        padding-top: 13.7rem;
     }
 
     .p-about{
         font-family: "Montserrat", sans-serif;
         /*font-style: normal;*/
         font-weight: 400;
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
         /*color: #1BA904;*/
-        letter-spacing: 1px;
-        padding-top: 50px;
+        letter-spacing: 2px;
+        padding-top: 4.7rem;
     }
 }
 

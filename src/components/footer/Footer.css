@@ -29,3 +29,26 @@ footer{
     font-size: 18px;
     /*line-height: 20px;*/
 }
+@media screen and (min-width: 3840px) {
+    .logoBig{
+        /*width: 100%;*/
+        height: 10rem;
+    }
+
+    .footerText{
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        padding-bottom: 10px;
+        /*line-height: 20px;*/
+    }
+
+    .footerTextNumber{
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2rem;
+        /*line-height: 20px;*/
+    }
+}

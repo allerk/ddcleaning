@@ -17,9 +17,9 @@ const PopUpService = () => {
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body" style={{backgroundColor: "#EAEFF5"}}>
-                            <div className="row">
-                                <div className="col-md-3 pb-5 pt-3">
-                                    <div className="card" style={{borderRadius: "20px", border: "none", paddingLeft: "16px", paddingRight: "16px"}}>
+                            <div className="row g-2">
+                                <div className="col-xl-3 col-md-3 pb-5 pt-3">
+                                    <div className="card card-popup">
                                         <div className="mx-2 card-body">
                                             <h5 className="service-subname my-2 ">One-off clean</h5>
                                             <p className="service-subdescription">
@@ -67,7 +67,7 @@ const PopUpService = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-3 pb-5 pt-3">
+                                <div className="col-xl-3 col-md-3 pb-5 pt-3">
                                     <div className="card" style={{borderRadius: "20px", border: "none", paddingLeft: "16px", paddingRight: "16px"}}>
                                         <div className="mx-2 card-body">
                                             <h5 className="service-subname my-2 ">Deep clean</h5>
@@ -117,7 +117,7 @@ const PopUpService = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-3 pb-5 pt-3">
+                                <div className="col-xl-3 col-md-3 pb-5 pt-3">
                                     <div className="card" style={{borderRadius: "20px", border: "none", paddingLeft: "16px", paddingRight: "16px"}}>
                                         <div className="mx-2 card-body">
                                             <h5 className="service-subname my-2 ">End of tenancy clean</h5>
@@ -166,7 +166,7 @@ const PopUpService = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-3 pb-5 pt-3">
+                                <div className="col-xl-3 col-md-3 pb-5 pt-3">
                                     <div className="card" style={{borderRadius: "20px", border: "none", paddingLeft: "16px", paddingRight: "16px"}}>
                                         <div className="mx-2 card-body">
                                             <h5 className="service-subname my-2 ">After builders clean</h5>

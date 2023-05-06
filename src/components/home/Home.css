@@ -71,9 +71,6 @@ section{
     .bg-image-about {
         background-image: none;
         background-color: white;
-        /*background-size: 100%;*/
-        /*background-repeat: no-repeat;*/
-        /*background-position: center;*/
     }
 
     .bg-image-welcome {
@@ -92,9 +89,9 @@ section{
 @media screen and (min-width: 3840px) {
     .bg-image-about {
         background-image: url('assets/about_woman_edited.jpg');
-        background-size: 75%;
+        background-size: 100%;
         background-repeat: no-repeat;
-        background-position: top right;
+        background-position: center right;
         /*height: 70vh;*/
     }
 
@@ -103,12 +100,19 @@ section{
     }
 }
 
-@media (max-width: 1660px) {
+@media screen and (min-width: 1280px) and (max-width: 1660px) {
     .bg-image-services {
         background-image: none;
         background-color: white;
         /*background-size: cover;*/
         /*background-repeat: no-repeat;*/
+    }
+
+    .bg-image-about {
+        background-image: url('assets/about_woman_edited.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }
 

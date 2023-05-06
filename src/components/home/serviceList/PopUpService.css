@@ -25,6 +25,13 @@
     top: calc(50% - 40px/2 + 205px);
 }
 
+.card-popup{
+    border-radius: 20px;
+    border: none;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
 .service-price{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -137,10 +144,143 @@
         left: calc(50% - 280px/2 - 320px);
         top: calc(50% - 40px/2 + 205px);
     }
+
+    .card-popup{
+        border-radius: 20px;
+        border: none;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
 
 @media screen and (min-width: 480px) and (max-width: 950px) {
     .modal-xl{
         max-width: 95%;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .modal-xl{
+        max-width: 60%;
+    }
+}
+
+@media screen and (min-width: 3840px) {
+    .modal-xl{
+        max-width: 45%;
+    }
+
+    .service-button{
+        width: 80%;
+        height: 40px;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.3rem;
+        /*line-height: 20px;*/
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        background: #1BA904;
+        border-radius: 20px;
+        border: none;
+
+        /*width: 100%;*/
+        /*height: 40px;*/
+        left: calc(50% - 280px/2 - 320px);
+        top: calc(50% - 40px/2 + 205px);
+    }
+
+    .card-popup{
+        border-radius: 20px;
+        border: none;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .service-price{
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3rem;
+        /*line-height: 20px;*/
+    }
+
+    .service-price-date{
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3rem;
+        /*font-size: 0.5rem;*/
+        color: #1BA904;
+        /*line-height: 20px;*/
+    }
+
+    .service-subname{
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2rem;
+        /*line-height: 20px;*/
+        letter-spacing: 0.02em;
+        color: black;
+        text-transform: uppercase;
+    }
+
+    .service-subdescription{
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.5rem;
+        /*line-height: 20px;*/
+        letter-spacing: 0.02em;
+        text-transform: lowercase;
+        color: #797979;
+    }
+
+    .popup-included{
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.5rem;
+        /*line-height: 13px;*/
+
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: lowercase;
+
+        color: #000000;
+    }
+
+    .popup-ul{
+        list-style-type: none; /* Remove the bullet points */
+        padding: 0; /* Remove the default padding */
+    }
+
+    .popup-li{
+        margin-bottom: 0.5rem;
+    }
+    .popup-li::before{
+        content: "\2022"; /* Add a dot before each item */
+        margin-right: 0.5em; /* Add some spacing between the dot and the text */
+    }
+
+    .popup-hr{
+        margin-top: 0;
+    }
+
+    .popup-i{
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.5rem;
+        /*line-height: 13px;*/
+
+        align-items: center;
+        letter-spacing: 0.03em;
+        text-transform: capitalize;
+
+        color: #797979;
     }
 }

@@ -126,14 +126,26 @@
 }
 
 @media screen and (min-width: 3840px) {
+
+    .align-services{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;
+        font-family: "Montserrat", sans-serif;
+        padding-top: 6.2rem;
+    }
+
+    .service-list-image{
+        width: 100%;
+    }
     .h1-services{
         font-family: "Roboto", sans-serif;
         font-style: normal;
         font-weight: 900;
-        font-size: 75px;
-        line-height: 70px;
+        font-size: 4.7rem;
+        line-height: 2.5rem;
         /*color: #1BA904;*/
-        padding-top: 100px;
+        padding-top: 150px;
         text-align: left;
     }
 
@@ -147,8 +159,8 @@
         font-family: "Roboto", sans-serif;
         font-style: normal;
         font-weight: 700;
-        font-size: 50px;
-        line-height: 45px;
+        font-size: 2.8rem;
+        line-height: 1.8rem;
         /* identical to box height, or 111% */
 
 
@@ -159,11 +171,11 @@
         font-family: "Montserrat", sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
         /*color: #1BA904;*/
         letter-spacing: 1px;
-        padding-top: 15px;
+        padding-top: 1.5rem;
 
     }
 
@@ -171,23 +183,25 @@
         font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 700;
-        font-size: 28px;
-        line-height: 40px;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
         /* identical to box height, or 167% */
 
-        letter-spacing: 0.02em;
+        letter-spacing: 0.32px;
         text-transform: lowercase;
+
+        /*align-items: end;*/
 
         color: #EAEFF5;
 
         /*position: absolute;*/
-        width: 130px;
-        height: 40px;
+        width: 100%;
+        height: 30px;
         /*left: calc(50% - 65px/2);*/
         /*top: calc(50% - 20px/2);*/
 
         background: #1BA904;
-        border-radius: 20px;
+        border-radius: 10px;
 
         /* Главная кнопка */
 
@@ -198,7 +212,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 11px 57px;
+        /*padding: 11px 57px;*/
         gap: 10px;
         border: none;
 

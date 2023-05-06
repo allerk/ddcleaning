@@ -71,42 +71,44 @@
 @media screen and (min-width: 3840px) {
     .h1-welcome{
         font-family: "Roboto", sans-serif;
+        /*font-style: normal;*/
         font-weight: 900;
-        font-size: 90px;
-        line-height: 100px;
+        font-size: 4.4rem;
+        line-height: 3rem;
         color: #1BA904;
-        margin-bottom: 30px;
+        margin-bottom: 1.8rem;
     }
 
     .p-welcome{
         font-family: "Roboto", sans-serif;
         /*font-style: normal;*/
         font-weight: 400;
-        font-size: 40px;
-        line-height: 60px;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
         color: #000000BF;
-        margin-bottom: 41px;
+        margin-bottom: 2.5rem;
     }
+
 
     .services{
         /*display: flex;*/
         font-family: "Roboto", sans-serif;
         font-weight: 700;
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
         color: #F6FFF7;
 
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 22px 114px;
+        padding: 11px 57px;
         gap: 10px;
 
-        width: 388px;
-        height: 80px;
+        width: 16.2rem;
+        height: 3.1rem;
 
         background: #1BA904;
-        border-radius: 60px;
+        border-radius: 2rem;
         border: none;
 
         /* Inside auto layout */

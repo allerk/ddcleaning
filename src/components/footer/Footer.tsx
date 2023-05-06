@@ -44,7 +44,7 @@ const Footer = () => {
                                 <img
                                     src={insta}
                                     alt="instagram"
-                                    className="d-inline-block img-fluid mb-4 rounded-4"
+                                    className="d-inline-block img-fluid mb-4 rounded-4 logo-footer"
                                     style={{width: "15%", height: "auto"}}
                                 />
                             </div>

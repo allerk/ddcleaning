@@ -70,15 +70,12 @@ const Calculator = () => {
                 </div>
                 <div className="col-md-6 col-lg-3 inputNames">
                     <label className="mainCalculator">Select date</label>
-                    {/*<div style={{width: "100%"}}>*/}
-                    {/*    <input type="datetime-local" min={new Date().toISOString().slice(0,16)} name="squareMeters" className="input-calculator" style={{width: "100%"}}/>*/}
-                    {/*</div>*/}
                     <Flatpickr
-                        // className="input-calculator"
+                        className="input-calculator"
                         value={dateTime}
                         options={{
                             enableTime: true,
-                            dateFormat: "Y-m-d H:i",
+                            dateFormat: "d-m-y H:i",
                             minDate: new Date().toISOString().slice(0,16)
                         }}
                         onChange={() => handleChange}
