@@ -96,21 +96,21 @@ const Calculator = () => {
                 <div className="col-md-12">
                     <label className="inputNames" style={{paddingTop: "30px"}}>Additional services</label>
                     <div className="form-check">
-                        <input className="form-check-input shadow-none" type="checkbox"/>
+                        <input className="form-check-input shadow-none ultra-checkbox" type="checkbox"/>
                             <label className="form-check-label additional">
                                 Sofa cleaning
                                 <small> (not included in the price of calculating the online calculator)</small>
                             </label>
                     </div>
                     <div className="form-check">
-                        <input className="form-check-input shadow-none" type="checkbox"/>
+                        <input className="form-check-input shadow-none ultra-checkbox" type="checkbox"/>
                             <label className="form-check-label additional">
                                 Antiseptic treatment 0.50 € / m2
                                 <small> (not included in the calculation cost with an online calculator)</small>
                             </label>
                     </div>
                     <div className="form-check">
-                        <input className="form-check-input shadow-none" type="checkbox"/>
+                        <input className="form-check-input shadow-none ultra-checkbox" type="checkbox"/>
                             <label className="form-check-label additional">
                                 Window cleaning
                                 <small> (price from 7 euros, the price includes washing glass, frame, handles and window sill)</small>
@@ -120,7 +120,7 @@ const Calculator = () => {
                 <div className="col-md-3">
                     <label className="inputNames" style={{paddingTop: "30px", paddingBottom: "5px"}}>Public contract:</label>
                     <div className="form-check">
-                        <input className="form-check-input shadow-none" type="checkbox"/>
+                        <input className="form-check-input shadow-none ultra-checkbox" type="checkbox"/>
                         <label className="form-check-label additional">
                             I agree <a href="/" style={{textDecoration: "underline", color: "black"}} target="_blank">with the contract</a>
                         </label>
