@@ -1,4 +1,3 @@
-import portrait from './woman-doing-cleaning-the-house.jpg'
 import './About.css'
 
 const About = () => {
@@ -6,7 +5,7 @@ const About = () => {
         <div className="row g-2">
             <div className="col-md-6">
                 <div className="items">
-                    <h1 className="h1-about">
+                    <h1 className="h1-about expand-block">
                         About us
                     </h1>
                     <h3 className="h3-about">
@@ -17,7 +16,8 @@ const About = () => {
                     </p>
                 </div>
             </div>
-            <div className="col-md-7"></div>
+            <div className="col-md-6">
+            </div>
         </div>
     )
 }

@@ -110,6 +110,13 @@
     }
 }
 
+@media screen and (min-width: 1280px) and (max-width: 1660px) {
+    .center-mobile-questions{
+        justify-content: center;
+        padding-right: 30px;
+    }
+}
+
 @media screen and (min-width: 3840px) {
     .h1-questions{
         color: black;

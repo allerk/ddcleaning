@@ -31,7 +31,7 @@ section{
     background-image: url('assets/about_woman_edited.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
 }
 
 .expand{
@@ -109,11 +109,25 @@ section{
     }
 
     .bg-image-about {
-        background-image: url('assets/about_woman_edited.jpg');
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
+        background-image: none;
+        background-color: white;
     }
+
+    .bg-advantages{
+        padding-top: 100px;
+    }
+
+    .bg-image-welcome {
+        background-image: url("assets/main_edited.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top right;
+        height: 100vh;
+    }
+
+    /*.max-middle{*/
+    /*    height: 100%;*/
+    /*}*/
 }
 
 /*@media screen and (min-width: 2048px) {*/

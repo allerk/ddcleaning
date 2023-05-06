@@ -51,6 +51,11 @@
     text-align: left;
 }
 
+/*.expand-block{*/
+/*    margin-top: 8rem;*/
+/*    margin-bottom: 8rem;*/
+/*}*/
+
 @media screen and (min-width: 3840px) {
     .h1-about{
         font-family: "Roboto", sans-serif;
