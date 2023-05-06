@@ -48,7 +48,7 @@ const Contact = () => {
     return(
         <div className="bg-contacts pb-5">
             <div className="container max-w-4k">
-                <h1 className="h1-about text-md-start" style={{paddingBottom: "75px", paddingTop: "100px"}}>Write a latter to connect with us</h1>
+                <h1 className="h1-about text-md-start p-contacts">Write a latter to connect with us</h1>
                 <form className="row">
                     <div className="col-md-8">
                         <div className="row">
@@ -66,7 +66,6 @@ const Contact = () => {
                                 <div className="pt-2">
                                     <textarea
                                         className="textarea-contracts"
-                                        style={{height: "197px", maxHeight: "197px", width: "100%"}}
                                         maxLength={1000}
                                     ></textarea>
                                 </div>
