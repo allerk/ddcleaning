@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;400;500;600;700;900&display=swap');
 
+
+.send-button-contracts[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
 .bg-contacts{
     background-color: #EAEFF5;
     /*min-height: 750px;*/
