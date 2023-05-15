@@ -4,7 +4,7 @@ import Footer from "./components/footer/Footer";
 import './App.css'
 import Header from "./components/header/Header";
 import Contact from "./components/contacts/Contact";
-import {Trans, useTranslation} from "react-i18next";
+import {I18nContext, I18nextProvider, Trans, useTranslation} from "react-i18next";
 import Service from "./components/services/Service";
 
 export const App = () => {

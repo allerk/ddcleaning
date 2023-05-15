@@ -1,5 +1,158 @@
 {
-  "homePageBlockName": "Services",
-  "homePageBlockContent": "                                        We can find you a brilliant local cleaner for a regular weekly or fortnightly clean, or a specialist cleaner for one-off cleans including deep cleaning and end of tenancy cleaning.\n\n                                        Wonky walls? Pesky plumbing? Our team can find tradespeople for any job in your home, including plumbers, electricians, carpenters, handypeople, decorators and gardeners.\n\n                                        We make the whole process seamless. No calendar mix ups. No hassle with cash. No stress - and no mess. Just an easy experience, super-responsive customer support and a squad of vetted, experienced professionals.",
-  "homePageBlockLink": "How it works"
+  "home": {
+    "welcome": {
+      "title": "Teenused",
+      "subtitle": "Kõik vajalikud puhastusteenused era- ja firmadele kliente <br /> üle Eesti",
+      "button": "Teenused"
+    },
+    "about": {
+      "title": "",
+      "subtitle": "",
+      "description": ""
+    },
+    "advantages": {
+      "title": "",
+      "content1": {
+        "name": "",
+        "description": ""
+      },
+      "content2": {
+        "name": "",
+        "description": ""
+      },
+      "content3": {
+        "name": "",
+        "description": ""
+      },
+      "content4": {
+        "name": "",
+        "description": ""
+      }
+    },
+    "serviceList": {
+      "title": "",
+      "buttonName": "",
+      "block1": {
+        "name": "",
+        "description": "",
+        "popUp": {
+          "column1": {
+            "name": "",
+            "description": "",
+            "per": "",
+            "button": "",
+            "includes": "",
+            "essentials": {
+              "name1": "",
+              "name2": "",
+              "name3": "",
+              "name4": ""
+            }
+          },
+          "column2": {
+            "name": "",
+            "description": "",
+            "per": "",
+            "button": "",
+            "includes": "",
+            "essentials": {
+              "name1": "",
+              "name2": "",
+              "name3": "",
+              "name4": ""
+            }
+          },
+          "column3": {
+            "name": "",
+            "description": "",
+            "per": "",
+            "button": "",
+            "includes": "",
+            "essentials": {
+              "name1": "",
+              "name2": "",
+              "name3": "",
+              "name4": ""
+            }
+          },
+          "column4": {
+            "name": "",
+            "description": "",
+            "per": "",
+            "button": "",
+            "includes": "",
+            "essentials": {
+              "name1": "",
+              "name2": "",
+              "name3": "",
+              "name4": ""
+            }
+          }
+        }
+      },
+      "block2": {
+        "name": "",
+        "description": "",
+        "popUp": {
+          "column1": {
+            "name": "",
+            "description": "",
+            "per": "",
+            "button": "",
+            "includes": "",
+            "essentials": {
+              "name1": "",
+              "name2": "",
+              "name3": "",
+              "name4": ""
+            }
+          },
+          "column2": {
+            "name": "",
+            "description": "",
+            "per": "",
+            "button": "",
+            "includes": "",
+            "essentials": {
+              "name1": "",
+              "name2": "",
+              "name3": "",
+              "name4": ""
+            }
+          },
+          "column3": {
+            "name": "",
+            "description": "",
+            "per": "",
+            "button": "",
+            "includes": "",
+            "essentials": {
+              "name1": "",
+              "name2": "",
+              "name3": "",
+              "name4": ""
+            }
+          },
+          "column4": {
+            "name": "",
+            "description": "",
+            "per": "",
+            "button": "",
+            "includes": "",
+            "essentials": {
+              "name1": "",
+              "name2": "",
+              "name3": "",
+              "name4": ""
+            }
+          }
+        }
+      }
+    },
+    "questions": {
+      "title": "",
+      "description": "",
+      "button": ""
+    }
+  }
 }

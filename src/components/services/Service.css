@@ -3,6 +3,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: top;
+    background-color: #eef1f6;
 }
 
 .bg-business-calculator{
@@ -24,7 +25,7 @@
     /*}*/
 }
 
-@media screen and (min-width: 480px) and (max-width: 950px) {
+@media screen and (min-width: 480px) and (max-width: 1000px) {
     .bg-image-description {
         background-image: none;
     }

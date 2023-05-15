@@ -37,14 +37,8 @@ const Faq = () => {
                 <hr></hr>
                 <button className={`accordion faqQuestion ${faqSection[0].isActive ? 'activeFaq' : ''}`} onClick={() => toggleSection(1)}>Question 1</button>
                 <div className="panel" style={{maxHeight: `${faqSection[0].panelHeight}px`}}>
-                    <div className="row">
-                        <div className="col-md-2"></div>
-                        <div className="col-md-8">
-                            <p className="faqDescription">    На этом месте находится обычный текст среднего размера. Он может использоваться в обычных блоках на всём сайте. На этом месте находится обычный текст среднего размера. Он может использоваться в обычных блоках на всём сайте.     На этом месте находится обычный текст среднего размера. Он может использоваться в обычных блоках на всём сайте.
-                            </p>
-                        </div>
-                        <div className="col-md-2"></div>
-                    </div>
+                    <p className="faqDescription">    На этом месте находится обычный текст среднего размера. Он может использоваться в обычных блоках на всём сайте. На этом месте находится обычный текст среднего размера. Он может использоваться в обычных блоках на всём сайте.     На этом месте находится обычный текст среднего размера. Он может использоваться в обычных блоках на всём сайте.
+                    </p>
                 </div>
                 <hr></hr>
                 <button className={`accordion faqQuestion ${faqSection[1].isActive ? 'activeFaq' : ''}`} onClick={() => toggleSection(2)}>Question 2</button>

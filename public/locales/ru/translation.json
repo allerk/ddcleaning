@@ -1,5 +1,158 @@
 {
-  "homePageBlockName": "Сервисы",
-  "homePageBlockContent": "Мы можем найти вам блестящего местного уборщика для регулярной еженедельной или двухнедельной уборки или специалиста по уборке для одноразовой уборки, включая генеральную уборку и уборку в конце аренды.\n\nКривые стены? Назойливая сантехника? Наша команда может найти специалистов для любой работы в вашем доме, включая сантехников, электриков, плотников, разнорабочих, декораторов и садовников.\n\nМы делаем весь процесс бесшовным. Никакой путаницы в календаре. Никаких хлопот с наличными. Нет стресса - и нет беспорядка. Простой опыт, супер-отзывчивая поддержка клиентов и команда проверенных, опытных профессионалов.",
-  "homePageBlockLink": "Как это работает?"
+  "home": {
+    "welcome": {
+      "title": "Teenused",
+      "subtitle": "Kõik vajalikud puhastusteenused era- ja firmadele kliente <br /> üle Eesti",
+      "button": "Teenused"
+    },
+    "about": {
+      "title": "",
+      "subtitle": "",
+      "description": ""
+    },
+    "advantages": {
+      "title": "",
+      "content1": {
+        "name": "",
+        "description": ""
+      },
+      "content2": {
+        "name": "",
+        "description": ""
+      },
+      "content3": {
+        "name": "",
+        "description": ""
+      },
+      "content4": {
+        "name": "",
+        "description": ""
+      }
+    },
+    "serviceList": {
+      "title": "",
+      "buttonName": "",
+      "block1": {
+        "name": "",
+        "description": "",
+        "popUp": {
+          "column1": {
+            "name": "",
+            "description": "",
+            "per": "",
+            "button": "",
+            "includes": "",
+            "essentials": {
+              "name1": "",
+              "name2": "",
+              "name3": "",
+              "name4": ""
+            }
+          },
+          "column2": {
+            "name": "",
+            "description": "",
+            "per": "",
+            "button": "",
+            "includes": "",
+            "essentials": {
+              "name1": "",
+              "name2": "",
+              "name3": "",
+              "name4": ""
+            }
+          },
+          "column3": {
+            "name": "",
+            "description": "",
+            "per": "",
+            "button": "",
+            "includes": "",
+            "essentials": {
+              "name1": "",
+              "name2": "",
+              "name3": "",
+              "name4": ""
+            }
+          },
+          "column4": {
+            "name": "",
+            "description": "",
+            "per": "",
+            "button": "",
+            "includes": "",
+            "essentials": {
+              "name1": "",
+              "name2": "",
+              "name3": "",
+              "name4": ""
+            }
+          }
+        }
+      },
+      "block2": {
+        "name": "",
+        "description": "",
+        "popUp": {
+          "column1": {
+            "name": "",
+            "description": "",
+            "per": "",
+            "button": "",
+            "includes": "",
+            "essentials": {
+              "name1": "",
+              "name2": "",
+              "name3": "",
+              "name4": ""
+            }
+          },
+          "column2": {
+            "name": "",
+            "description": "",
+            "per": "",
+            "button": "",
+            "includes": "",
+            "essentials": {
+              "name1": "",
+              "name2": "",
+              "name3": "",
+              "name4": ""
+            }
+          },
+          "column3": {
+            "name": "",
+            "description": "",
+            "per": "",
+            "button": "",
+            "includes": "",
+            "essentials": {
+              "name1": "",
+              "name2": "",
+              "name3": "",
+              "name4": ""
+            }
+          },
+          "column4": {
+            "name": "",
+            "description": "",
+            "per": "",
+            "button": "",
+            "includes": "",
+            "essentials": {
+              "name1": "",
+              "name2": "",
+              "name3": "",
+              "name4": ""
+            }
+          }
+        }
+      }
+    },
+    "questions": {
+      "title": "",
+      "description": "",
+      "button": ""
+    }
+  }
 }

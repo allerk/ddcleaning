@@ -31,11 +31,12 @@ section{
     background-image: url('assets/about_woman_edited.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
 }
 
 .expand{
     padding-top: 15vh;
+    /*margin-top: 25vh;*/
     padding-bottom: 15vh;
 }
 
@@ -50,8 +51,9 @@ section{
 }
 
 .bg-advantages{
-    background-color: #EAEFF5;
+    background-color: #eef1f6;
     min-height: 530px;
+    padding-top: 6.3rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -64,9 +66,10 @@ section{
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 950px) {
+@media screen and (min-width: 350px) and (max-width: 950px) {
     .bg-image-services {
         background-image: none;
+        background-color: white;
     }
     .bg-image-about {
         background-image: none;
@@ -100,17 +103,18 @@ section{
     }
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1660px) {
+@media screen and (max-width: 1240px) {
+    .bg-image-about {
+        background-image: none;
+        background-color: white;
+    }
+}
+@media screen and (min-width: 1240px) and (max-width: 1660px) {
     .bg-image-services {
         background-image: none;
         background-color: white;
         /*background-size: cover;*/
         /*background-repeat: no-repeat;*/
-    }
-
-    .bg-image-about {
-        background-image: none;
-        background-color: white;
     }
 
     .bg-advantages{

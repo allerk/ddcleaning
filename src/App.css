@@ -3,8 +3,21 @@
   margin: 0 auto;
   /*padding: 2rem;*/
   text-align: center;
-  /*background-color: #8bb0d3;*/
-  background-color: #EAEFF5;
+  background-color: #ffffff;
+  /*background-color: #EAEFF5;*/
+  /*background-color: #eef1f6;*/
+  /*background-image: url("https://d17x34b9fcvxk7.cloudfront.net/static/marketing/images/hero-backgrounds/making-bed.webp");*/
+  height: 100vh;
+}
+
+#root .bg-contacts{
+  /*max-width: 1280px;*/
+  margin: 0 auto;
+  /*padding: 2rem;*/
+  text-align: center;
+  /*background-color: #ffffff;*/
+  /*background-color: #EAEFF5;*/
+  background-color: #eef1f6;
   /*background-image: url("https://d17x34b9fcvxk7.cloudfront.net/static/marketing/images/hero-backgrounds/making-bed.webp");*/
   min-height: 100vh;
 }

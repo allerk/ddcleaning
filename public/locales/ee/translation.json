@@ -1,5 +1,178 @@
 {
-  "homePageBlockName": "Servised",
-  "homePageBlockContent": "Leiame teile suurepärase kohaliku koristaja iganädalaseks või kahenädalaseks koristamiseks või spetsialiseerunud koristaja ühekordseteks puhastusteks, sealhulgas sügavpuhastuseks ja üürikoristusteks.\n\nÄgedad seinad? Ärritav torustik? Meie meeskond võib leida kaupmehi igaks tööks teie kodus, sealhulgas torumehed, elektrikud, puusepad, meistrimehed, sisekujundajad ja aednikud.\n\nTeeme kogu protsessi sujuvaks. Ei mingeid kalendrisegamisi. Sularahaga pole probleeme. Ei mingit stressi – ega jama. Lihtsalt lihtne kogemus, ülitundlik klienditugi ja meeskond kontrollitud, kogenud spetsialiste.",
-  "homePageBlockLink": "Kuidas see töötab?"
+  "home": {
+    "welcome": {
+      "title": "Teenused",
+      "subtitle": "Kõik vajalikud puhastusteenused era- ja firmadele kliente <br /> üle Eesti",
+      "button": "Teenused"
+    },
+    "about": {
+      "title": "",
+      "subtitle": "",
+      "description": ""
+    },
+    "advantages": {
+      "title": "",
+      "content1": {
+        "name": "",
+        "description": ""
+      },
+      "content2": {
+        "name": "",
+        "description": ""
+      },
+      "content3": {
+        "name": "",
+        "description": ""
+      },
+      "content4": {
+        "name": "",
+        "description": ""
+      }
+    },
+    "serviceList": {
+      "title": "",
+      "buttonName": "",
+      "block1": {
+        "name": "",
+        "description": "",
+        "popUp": {
+          "column1": {
+            "name": "",
+            "description": "",
+            "per": "",
+            "button": "",
+            "includes": "",
+            "essentials": {
+              "name1": "",
+              "name2": "",
+              "name3": "",
+              "name4": ""
+            }
+          },
+          "column2": {
+            "name": "",
+            "description": "",
+            "per": "",
+            "button": "",
+            "includes": "",
+            "essentials": {
+              "name1": "",
+              "name2": "",
+              "name3": "",
+              "name4": ""
+            }
+          },
+          "column3": {
+            "name": "",
+            "description": "",
+            "per": "",
+            "button": "",
+            "includes": "",
+            "essentials": {
+              "name1": "",
+              "name2": "",
+              "name3": "",
+              "name4": ""
+            }
+          },
+          "column4": {
+            "name": "",
+            "description": "",
+            "per": "",
+            "button": "",
+            "includes": "",
+            "essentials": {
+              "name1": "",
+              "name2": "",
+              "name3": "",
+              "name4": ""
+            }
+          }
+        }
+      },
+      "block2": {
+        "name": "",
+        "description": "",
+        "popUp": {
+          "column1": {
+            "name": "",
+            "description": "",
+            "per": "",
+            "button": "",
+            "includes": "",
+            "essentials": {
+              "name1": "",
+              "name2": "",
+              "name3": "",
+              "name4": ""
+            }
+          },
+          "column2": {
+            "name": "",
+            "description": "",
+            "per": "",
+            "button": "",
+            "includes": "",
+            "essentials": {
+              "name1": "",
+              "name2": "",
+              "name3": "",
+              "name4": ""
+            }
+          },
+          "column3": {
+            "name": "",
+            "description": "",
+            "per": "",
+            "button": "",
+            "includes": "",
+            "essentials": {
+              "name1": "",
+              "name2": "",
+              "name3": "",
+              "name4": ""
+            }
+          },
+          "column4": {
+            "name": "",
+            "description": "",
+            "per": "",
+            "button": "",
+            "includes": "",
+            "essentials": {
+              "name1": "",
+              "name2": "",
+              "name3": "",
+              "name4": ""
+            }
+          }
+        }
+      }
+    },
+    "questions": {
+      "title": "",
+      "description": "",
+      "button": ""
+    }
+  },
+  "services": {
+    "service1": {
+      "description": {
+        "title": "",
+        "description": ""
+      },
+      "calculator": {
+        "title": "",
+        "inputs": {
+
+        }
+      },
+      "faq": {
+        "block1": {
+          "title": "",
+          "description": ""
+        }
+      }
+    }
+  }
 }

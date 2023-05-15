@@ -8,6 +8,10 @@ header{
     padding-left: 24px
 }
 
+.header-size{
+    height: 6rem;
+}
+
 .liHeader, .aHeader{
     font-family: "Montserrat", sans-serif;
 
@@ -102,6 +106,10 @@ header{
 @media screen and (max-width: 480px) {
     .headerLogo{
         padding-left: 1rem;
+    }
+
+    .header-size{
+        height: auto;
     }
 
     .dropdown-toggle::after {

@@ -62,16 +62,16 @@ const Header = () => {
     //     }
     // };
 
-    // const handleLanguageChange = (event:
-    //                                   EventTarget & HTMLInputElement |
-    //                                   EventTarget & HTMLSelectElement |
-    //                                   EventTarget & HTMLTextAreaElement) => {
-    //     Object.keys(lngs).map((lng) => {
-    //         if (lng.toLowerCase() === event.value.toLowerCase()){
-    //             i18n.changeLanguage(event.value)
-    //         }
-    //     })
-    // }
+    const handleLanguageChange = (event:
+                                      EventTarget & HTMLInputElement |
+                                      EventTarget & HTMLSelectElement |
+                                      EventTarget & HTMLTextAreaElement) => {
+        Object.keys(lngs).map((lng) => {
+            if (lng.toLowerCase() === event.value.toLowerCase()){
+                i18n.changeLanguage(event.value)
+            }
+        })
+    }
 
     return(
         <header className="sticky-top">
@@ -99,10 +99,14 @@ const Header = () => {
                         </ul>
                         <div className="lang-section">
                             <div className="input-group">
-                                <select className="select-language">
-                                    <option>en</option>
-                                    <option>et</option>
-                                    <option>ru</option>
+                                <select
+                                    value={i18n.resolvedLanguage}
+                                    className="select-language"
+                                    onChange={(e) => handleLanguageChange(e.target)}
+                                >
+                                    <option defaultValue="en">en</option>
+                                    <option value="ee">ee</option>
+                                    <option value="ru">ru</option>
                                 </select>
                             </div>
                             <img src={lang} alt="lang" className="logo disabled disabled-language" style={{paddingLeft: "0px"}}/>

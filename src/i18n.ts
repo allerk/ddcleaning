@@ -9,5 +9,9 @@ i18next
     .use(Backend)
     .init({
         debug: false,
-        fallbackLng: 'en'
+        fallbackLng: 'en',
+        react: {
+            transSupportBasicHtmlNodes: true,
+            transKeepBasicHtmlNodesFor: ['br'],
+        }
     })
