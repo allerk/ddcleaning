@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;400;500;600;700;900&display=swap');
+
+.radio-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.radio-container label {
+    margin-right: 0.6rem;
+    margin-left: 0.3rem;
+    /*margin-right: 10px;*/
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    /*font-weight: 400;*/
+    font-size: 1rem;
+    /*padding-bottom: 30px;*/
+    /*line-height: 20px;*/
+}

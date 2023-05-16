@@ -1,6 +1,8 @@
 import './Contact.css';
 import {FormEvent, useEffect, useRef, useState} from "react";
-import emailjs from '@emailjs/browser';
+import ReceiveAnswerBy from "../common/ReceiveAnswerBy";
+import sendEmail from "../../lib/mailer/SendMail";
+import SendMessageNotification from "../common/SendMessageNotification";
 
 const Contact = () => {
 
@@ -17,23 +19,14 @@ const Contact = () => {
         user_email: '',
         user_phone: '',
         user_topic: '',
-        user_text: ''
+        user_text: '',
+        user_answer: ''
     });
 
     const [isDisabled, setIsDisabled] = useState(true);
 
     const [error, setError] = useState<string>("")
     const [successMessage, setSuccessMessage] = useState<string>("")
-
-    const sendEmail = (e: FormEvent) => {
-
-        emailjs.sendForm('service_oqhwtiz', 'template_0b0pwhv', formRef.current!, 'sc2hel2uIvylSCfIe')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
-    };
 
     const handleChange = (event:
                               EventTarget & HTMLInputElement |
@@ -43,22 +36,24 @@ const Contact = () => {
     }
 
     const handleSubmit = (event: FormEvent) => {
-        console.log("submit")
+        console.log(configData)
         event.preventDefault();
-        console.log(isEmail());
         if (isEmail()){
-            sendEmail(event)
+            sendEmail('service_oqhwtiz', 'template_0b0pwhv', formRef.current!, 'sc2hel2uIvylSCfIe');
+            setSuccessMessage("Message was sent");
             clearForm();
         }
     }
 
     const clearForm = () => {
+        console.log("clear form was called")
         setConfigData({
             user_name: '',
             user_email: '',
             user_phone: '',
             user_topic: '',
-            user_text: ''
+            user_text: '',
+            user_answer: ''
         });
 
         setError("");
@@ -77,7 +72,8 @@ const Contact = () => {
         && configData.user_email.length !== 0
         && configData.user_phone.length !== 0
         && configData.user_topic.length !== 0
-        && configData.user_text.length !== 0)) {
+        && configData.user_text.length !== 0
+        && configData.user_answer.length !== 0)) {
         setIsDisabled(false);
     }
 
@@ -85,7 +81,8 @@ const Contact = () => {
         && configData.user_email.length === 0
         && configData.user_phone.length === 0
         && configData.user_topic.length === 0
-        && configData.user_text.length === 0)){
+        && configData.user_text.length === 0
+        && configData.user_answer.length === 0)){
         setIsDisabled(true);
     }
 
@@ -93,6 +90,11 @@ const Contact = () => {
         <div className="bg-contacts pb-5">
             <div className="container max-w-4k">
                 <h1 className="h1-about text-md-start p-contacts">Write a latter to connect with us</h1>
+                {successMessage !== "" ? (
+                    <>
+                        <SendMessageNotification message={successMessage}></SendMessageNotification>
+                    </>
+                ) : ""}
                 <form ref={formRef} className="row" onSubmit={(e) => handleSubmit(e)}>
                     <div className="col-md-8">
                         <div className="row">
@@ -102,6 +104,7 @@ const Contact = () => {
                                     name="user_name"
                                     className="input-contacts"
                                     type="text"
+                                    value={configData.user_name}
                                     onChange={(e) => handleChange(e.target)}
                                 />
                                 <label className="contacts-text">Email</label>
@@ -109,6 +112,7 @@ const Contact = () => {
                                     name="user_email"
                                     className="input-contacts"
                                     type="text"
+                                    value={configData.user_email}
                                     onChange={(e) => handleChange(e.target)}
                                 />
                                 {error !== "" ? (
@@ -121,6 +125,7 @@ const Contact = () => {
                                     name="user_phone"
                                     className="input-contacts"
                                     type="text"
+                                    value={configData.user_phone}
                                     onChange={(e) => handleChange(e.target)}
                                 />
                             </div>
@@ -130,6 +135,7 @@ const Contact = () => {
                                     name="user_topic"
                                     className="input-contacts"
                                     type="text"
+                                    value={configData.user_topic}
                                     onChange={(e) => handleChange(e.target)}
                                 />
                                 <div className="pt-2">
@@ -137,6 +143,7 @@ const Contact = () => {
                                         name="user_text"
                                         className="textarea-contracts"
                                         maxLength={1000}
+                                        value={configData.user_text}
                                         onChange={(e) => handleChange(e.target)}
                                     ></textarea>
                                 </div>
@@ -160,6 +167,7 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
+                    <ReceiveAnswerBy handleChange={handleChange} data={configData.user_answer}></ReceiveAnswerBy>
                     <div className="row">
                         <p className="reminder text-md-start" style={{paddingLeft: "12"}}>Заполняя форму, вы даете согласие на обраотку персональных данных</p>
                         <div className="col-md-4 text-md-start pb-3">

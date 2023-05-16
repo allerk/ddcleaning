@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;400;500;600;700;900&display=swap');
+
+.messageBox{
+    /*border: 1px solid #ff0000;*/
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: white;
+}

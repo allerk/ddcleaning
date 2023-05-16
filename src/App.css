@@ -7,7 +7,7 @@
   /*background-color: #EAEFF5;*/
   /*background-color: #eef1f6;*/
   /*background-image: url("https://d17x34b9fcvxk7.cloudfront.net/static/marketing/images/hero-backgrounds/making-bed.webp");*/
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #root .bg-contacts{
