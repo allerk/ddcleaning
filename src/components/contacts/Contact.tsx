@@ -1,9 +1,15 @@
 import './Contact.css';
 import {FormEvent, useEffect, useRef, useState} from "react";
 import ReceiveAnswerBy from "../common/ReceiveAnswerBy";
-import sendEmail from "../../lib/mailer/SendMail";
+import sendEmail from "../../lib/mailer/send-mail";
 import SendMessageNotification from "../common/SendMessageNotification";
+import isEmail from "../../lib/mailer/isEmail";
+import isPhone from "../../lib/mailer/isPhone";
 
+interface IErrors{
+    id: number,
+    errorMsg: string
+}
 const Contact = () => {
 
     useEffect(() => {
@@ -12,8 +18,6 @@ const Contact = () => {
 
     const formRef = useRef<HTMLFormElement>(null);
 
-    // const form = useRef<string | HTMLFormElement>("");
-    //
     const [configData, setConfigData] = useState({
         user_name: '',
         user_email: '',
@@ -25,7 +29,16 @@ const Contact = () => {
 
     const [isDisabled, setIsDisabled] = useState(true);
 
-    const [error, setError] = useState<string>("")
+    const [error, setError] = useState<IErrors[]>([
+        {
+            id: 0,
+            errorMsg: ""
+        },
+        {
+            id: 1,
+            errorMsg: ""
+        }
+    ])
     const [successMessage, setSuccessMessage] = useState<string>("")
 
     const handleChange = (event:
@@ -36,18 +49,29 @@ const Contact = () => {
     }
 
     const handleSubmit = (event: FormEvent) => {
-        console.log(configData)
         event.preventDefault();
-        if (isEmail()){
-            sendEmail('service_oqhwtiz', 'template_0b0pwhv', formRef.current!, 'sc2hel2uIvylSCfIe');
+        let tempErrorList: IErrors[] = [...error];
+        if (isEmail(configData.user_email)[0] && isPhone(configData.user_phone)[0]){
+            // sendEmail('service_oqhwtiz', 'template_0b0pwhv', formRef.current!, 'sc2hel2uIvylSCfIe');
             setSuccessMessage("Message was sent");
-            clearForm();
+            clearForm().then(r => {
+                return r;
+            });
         }
+
+        if (!isEmail(configData.user_email)[0]){
+            tempErrorList[0] = {...tempErrorList[0], errorMsg: isEmail(configData.user_email)[1]};
+        }
+        if (!isPhone(configData.user_phone)[0]){
+            tempErrorList[1] = {...tempErrorList[1], errorMsg: isPhone(configData.user_phone)[1]};
+        }
+
+        setError(tempErrorList);
     }
 
-    const clearForm = () => {
+    const clearForm = async () => {
         console.log("clear form was called")
-        setConfigData({
+        await setConfigData({
             user_name: '',
             user_email: '',
             user_phone: '',
@@ -56,16 +80,16 @@ const Contact = () => {
             user_answer: ''
         });
 
-        setError("");
-    }
-    const isEmail = () => {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(configData.user_email)){
-            setError("not valid email")
-            return false;
-        } else {
-            return emailRegex.test(configData.user_email);
-        }
+        setError([
+            {
+            id: 0,
+            errorMsg: ""
+            },
+            {
+                id: 1,
+                errorMsg: ""
+            }
+        ]);
     }
 
     if (isDisabled && (configData.user_name.length !== 0
@@ -99,7 +123,7 @@ const Contact = () => {
                     <div className="col-md-8">
                         <div className="row">
                             <div className="col-md-6">
-                                <label className="contacts-text">Name</label>
+                                <label className="contacts-text">Name<span style={{color: "red"}}>*</span></label>
                                 <input
                                     name="user_name"
                                     className="input-contacts"
@@ -107,7 +131,7 @@ const Contact = () => {
                                     value={configData.user_name}
                                     onChange={(e) => handleChange(e.target)}
                                 />
-                                <label className="contacts-text">Email</label>
+                                <label className="contacts-text">Email<span style={{color: "red"}}>*</span></label>
                                 <input
                                     name="user_email"
                                     className="input-contacts"
@@ -115,22 +139,27 @@ const Contact = () => {
                                     value={configData.user_email}
                                     onChange={(e) => handleChange(e.target)}
                                 />
-                                {error !== "" ? (
+                                {error[0].errorMsg !== "" ? (
                                     <span className="text-md-start">
-                                        {error}
+                                        {error[0].errorMsg}
                                     </span>
                                 ) : <></>}
-                                <label className="contacts-text">Phone number</label>
+                                <label className="contacts-text">Phone number<span style={{color: "red"}}>*</span></label>
                                 <input
                                     name="user_phone"
                                     className="input-contacts"
-                                    type="text"
+                                    type="tel"
                                     value={configData.user_phone}
                                     onChange={(e) => handleChange(e.target)}
                                 />
+                                {error[1].errorMsg !== "" ? (
+                                    <span className="text-md-start">
+                                        {error[1].errorMsg}
+                                    </span>
+                                ) : <></>}
                             </div>
                             <div className="col-md-6">
-                                <label className="contacts-text">Topic</label>
+                                <label className="contacts-text">Topic<span style={{color: "red"}}>*</span></label>
                                 <input
                                     name="user_topic"
                                     className="input-contacts"
