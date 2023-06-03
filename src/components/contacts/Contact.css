@@ -22,7 +22,12 @@
     border: 1px solid #C4C4C4;
     border-radius: 10px;
 }
-
+.error-text{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: red;
+}
 .textarea-contracts{
     display: block;
     /*width: 100%;*/

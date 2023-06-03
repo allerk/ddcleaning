@@ -4,8 +4,17 @@ import Welcome from "./welcome/Welcome";
 import Advantages from "./advantages/Advantages";
 import ServiceList from "./serviceList/ServiceList";
 import Questions from "./questions/Questions";
+import {useEffect} from "react";
 
 const Home = () => {
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'instant' as ScrollBehavior
+        });
+    }, [])
+
     return(
         <div className="container-fluid p-0">
             <section id="welcome" className="m-0 bg-image-welcome">

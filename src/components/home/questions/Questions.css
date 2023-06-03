@@ -54,6 +54,11 @@
     color: #000000;
 }
 
+.btn-contact-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .btn-contact{
     font-family: 'Roboto', sans-serif;
     font-style: normal;

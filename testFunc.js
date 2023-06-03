@@ -9,4 +9,5 @@
 // const phoneNumber = '+1 (1a23) 456-7890';
 // const isValid = isValidPhoneNumber(phoneNumber);
 console.log(/[a-zA-Z]/.test("+37255969946")); // Output: true
-console.log(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test("alexandr.lerko@gmail.com"))
+// console.log(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test("alexandr.lerko@gmaˇˇil.com"))
+console.log(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test("alexandr.lerko@gma\"\@il.com"))

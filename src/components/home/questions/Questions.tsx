@@ -1,5 +1,6 @@
 import picture from "../assets/questions.jpg"
 import "./Questions.css"
+import {Link} from "react-router-dom";
 
 const Questions = () => {
     return(
@@ -16,10 +17,16 @@ const Questions = () => {
                                 <p className="p-questions text-center">
                                     Свяжитесь с нами и получите незамедлительный и полный ответ
                                 </p>
-                                <div className="row justify-content-center">
-                                    <button className="btn-contact align-content-center">
-                                        contact
-                                    </button>
+                                <div className="row justify-content-center align-content-center">
+                                    {/*<button className="btn-contact align-content-center">*/}
+                                    {/*    <Link to="/contacts" className="align-content-center" style={{color: "white"}}>*/}
+                                    {/*        /!*<button className="btn-contact ">contact</button>*!/*/}
+                                    {/*        contact*/}
+                                    {/*    </Link>*/}
+                                    {/*</button>*/}
+                                    <Link to="/contacts" className="btn-contact-link" style={{color: "white"}}>
+                                        <button className="btn-contact ">contact</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

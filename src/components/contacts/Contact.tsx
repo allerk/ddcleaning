@@ -13,7 +13,10 @@ interface IErrors{
 const Contact = () => {
 
     useEffect(() => {
-        window.scrollTo(0, 0);
+        window.scrollTo({
+            top: 0,
+            behavior: 'instant' as ScrollBehavior
+        });
     }, [])
 
     const formRef = useRef<HTMLFormElement>(null);
@@ -52,7 +55,7 @@ const Contact = () => {
         event.preventDefault();
         let tempErrorList: IErrors[] = [...error];
         if (isEmail(configData.user_email)[0] && isPhone(configData.user_phone)[0]){
-            // sendEmail('service_oqhwtiz', 'template_0b0pwhv', formRef.current!, 'sc2hel2uIvylSCfIe');
+            sendEmail('service_oqhwtiz', 'template_0b0pwhv', formRef.current!, 'sc2hel2uIvylSCfIe');
             setSuccessMessage("Message was sent");
             clearForm().then(r => {
                 return r;
@@ -140,7 +143,7 @@ const Contact = () => {
                                     onChange={(e) => handleChange(e.target)}
                                 />
                                 {error[0].errorMsg !== "" ? (
-                                    <span className="text-md-start">
+                                    <span className="error-text">
                                         {error[0].errorMsg}
                                     </span>
                                 ) : <></>}
@@ -153,7 +156,7 @@ const Contact = () => {
                                     onChange={(e) => handleChange(e.target)}
                                 />
                                 {error[1].errorMsg !== "" ? (
-                                    <span className="text-md-start">
+                                    <span className="error-text">
                                         {error[1].errorMsg}
                                     </span>
                                 ) : <></>}
