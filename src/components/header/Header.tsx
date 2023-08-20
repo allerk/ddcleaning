@@ -109,7 +109,6 @@ const Header = () => {
                                     <option value="ru">ru</option>
                                 </select>
                             </div>
-                            <img src={lang} alt="lang" className="logo disabled disabled-language" style={{paddingLeft: "0px"}}/>
                         </div>
                     </div>
             </nav>

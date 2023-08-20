@@ -34,8 +34,9 @@ header{
 
 .lang-section{
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    align-items: start;
+    justify-content: center;
+    padding-right: 24px;
 }
 
 .input-group{
@@ -121,6 +122,7 @@ header{
         align-items: center;
         justify-content: flex-end;
         flex-direction: column;
+        padding-right: 0;
     }
 
     .input-group{
